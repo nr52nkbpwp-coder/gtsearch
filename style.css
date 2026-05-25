@@ -1,0 +1,103 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#0f0f0f;
+  color:white;
+  font-family:Arial, sans-serif;
+  min-height:100vh;
+  padding:30px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:30px;
+  font-size:42px;
+}
+
+.search-box{
+  margin-bottom:30px;
+}
+
+.search-box input{
+  width:100%;
+  padding:16px;
+  border:none;
+  outline:none;
+  border-radius:14px;
+  background:#1b1b1b;
+  color:white;
+  font-size:16px;
+  border:1px solid #2a2a2a;
+}
+
+.search-box input:focus{
+  border-color:#555;
+}
+
+.loading{
+  text-align:center;
+  margin-bottom:20px;
+  color:#aaa;
+}
+
+.hidden{
+  display:none;
+}
+
+.results{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#181818;
+  border:1px solid #2c2c2c;
+  border-radius:16px;
+  padding:20px;
+  transition:0.2s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  border-color:#444;
+}
+
+.card img{
+  width:90px;
+  height:90px;
+  image-rendering:pixelated;
+  margin-bottom:15px;
+}
+
+.card h2{
+  margin-bottom:10px;
+  font-size:24px;
+}
+
+.rarity{
+  color:gold;
+  margin-bottom:12px;
+  font-weight:bold;
+}
+
+.description{
+  color:#ccc;
+  line-height:1.5;
+  font-size:14px;
+}
+
+.empty{
+  text-align:center;
+  color:#888;
+  margin-top:40px;
+}
